@@ -1,0 +1,30 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Actualmente...",
+    title: "Freelance Dev NextJs, ReactJS y TypeScript",
+    company: "Keluc",
+    description:
+      "Soy responsable de la creación y desarrollo de una plataforma que ofrece servicios personalizados centrados en la remodelación de interiores y el diseño e instalación de cocinas integrales. Desde el diseño conceptual hasta la implementación, lideré el proceso para garantizar una experiencia de usuario excepcional y resultados de alta calidad en cada proyecto.",
+  },
+  {
+    date: "Marzo 2024",
+    title: "Desarrollador Web FullStack",
+    company: "C&M DEVELOPMENT GROUP S.A.S",
+    description:
+      "Encargado de liderar el desarrollo completo de proyectos, abarcando desde la creación de bases de datos hasta la implementación del FrontEnd y BackEnd. Me especializo en tecnologías como .NET C#, Angular, TypeScript y SQL Server, asegurando la integración fluida de sistemas y la entrega de soluciones eficientes y de alta calidad.",
+    link: "/public/Documents/Sys.IngCV pro 2023.pdf",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
