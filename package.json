@@ -10,10 +10,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "0.5.6",
+    "@astrojs/check": "0.5.10",
     "@astrojs/tailwind": "5.1.0",
     "@fontsource-variable/onest": "5.0.2",
-    "astro": "4.4.5",
+    "@rollup/rollup-darwin-x64": "^4.14.3",
+    "astro": "4.7.0",
     "astro-robots-txt": "1.0.0",
     "tailwindcss": "3.4.1",
     "typescript": "5.3.3"
