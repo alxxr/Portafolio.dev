@@ -1,17 +1,19 @@
 ---
-import Layout from "@/layouts/Layout.astro"
+import Layout from "@/layouts/Layout.astro";
 
-import AboutMe from "@/components/AboutMe.astro"
-import Briefcase from "@/components/icons/Briefcase.astro"
-import CodeIcon from "@/components/icons/Code.astro"
-import TecnologieIco from "@/components/icons/TecIco.astro"
-import Experience from "@/components/Experience.astro"
-import ProfileCheck from "@/components/icons/ProfileCheck.astro"
-import Projects from "@/components/Projects.astro"
-import CertAcademy from "@/components/CertificacionesAcademy.astro"
-import Tecnologies from "@/components/Tecnologias.astro"
-import SectionContainer from "@/components/SectionContainer.astro"
-import Hero from "@/components/Hero.astro"
+import AboutMe from "@/components/AboutMe.astro";
+import Briefcase from "@/components/icons/Briefcase.astro";
+import CodeIcon from "@/components/icons/Code.astro";
+import TecnologieIco from "@/components/icons/TecIco.astro";
+import Experience from "@/components/Experience.astro";
+import ProfileCheck from "@/components/icons/ProfileCheck.astro";
+import Projects from "@/components/Projects.astro";
+import CertAcademy from "@/components/CertificacionesAcademy.astro";
+import CertLaborales from "@/components/CertificacionesLaborales.astro";
+import Tecnologies from "@/components/Tecnologias.astro";
+import SectionContainer from "@/components/SectionContainer.astro";
+import SectionContainerCert from "@/components/SectionContainerCert.astro";
+import Hero from "@/components/Hero.astro";
 ---
 
 <Layout
@@ -20,11 +22,10 @@ import Hero from "@/components/Hero.astro"
 >
   <main class="px-4">
     <SectionContainer class="py-16 md:py-36">
-      <Hero>
-      </slot>
-    </Hero>
+      <Hero />
     </SectionContainer>
-    <div class="space-y-24">
+  </main>
+  <div class="space-y-24">
     <SectionContainer id="experiencia">
       <h2
         class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
@@ -55,16 +56,6 @@ import Hero from "@/components/Hero.astro"
       <Projects />
     </SectionContainer>
 
-    <SectionContainer id="certAcademy">
-      <h2
-        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
-      >
-        <CodeIcon class="size-7" />
-        Certificaciones Academicas
-      </h2>
-      <CertAcademy />
-    </SectionContainer>
-
     <SectionContainer id="sobre-mi">
       <h2
         class="flex items-center mb-6 text-3xl font-semibold gap-x-8 text-black/80 dark:text-white"
@@ -74,6 +65,31 @@ import Hero from "@/components/Hero.astro"
       </h2>
       <AboutMe />
     </SectionContainer>
+
+    <SectionContainer>
+      <h2
+        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
+      >
+        <CodeIcon class="size-7" />
+        Certificaciones Laborales
+      </h2>
+    </SectionContainer>
+
+    <SectionContainerCert id="certLaboral">
+      <CertLaborales />
+    </SectionContainerCert>
+
+    <SectionContainer id="certAcademy">
+      <h2
+        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
+      >
+        <CodeIcon class="size-7" />
+        Certificaciones Academicas
+      </h2>
+    </SectionContainer>
+
+    <SectionContainerCert id="certAcademy">
+      <CertAcademy />
+    </SectionContainerCert>
   </div>
-  </main>
 </Layout>
