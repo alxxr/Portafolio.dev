@@ -7,9 +7,12 @@ interface Props {
   description: string
   link?: string
   date: string
+  time: string
 }
 
-const { title, company, description, link, date } = Astro.props
+const { title, company, description, link, date, time } = Astro.props
+
+const link2 = "https://github.com/alxxr/Microservicio";
 ---
 
 <div
@@ -23,6 +26,8 @@ const { title, company, description, link, date } = Astro.props
 
       <h3 class="text-xl font-bold text-yellow-400">{title}</h3>
       <h4 class="font-semibold text-xl text-gray-600 dark:text-white">{company}</h4>
+      <time class="p-0 m-0 text-sm text-gray-600/80 dark:text-white/80">{time}</time>
+      <br>
       <time class="p-0 m-0 text-sm text-gray-600/80 dark:text-white/80">{date}</time>
     </div>
   </div>
@@ -31,7 +36,31 @@ const { title, company, description, link, date } = Astro.props
     {
       link && (
         <LinkInline href={link}>
-          Saber más{" "}
+          {time === "1 day" ? "GitHub BFF: " : "Saber más"}{" "}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-5 icon icon-tabler icon-tabler-chevron-right"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <>
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M9 6l6 6l-6 6" />
+            </>
+          </svg>
+        </LinkInline>
+      )
+    }
+    {
+      link2 && time === "1 day" && (
+        <LinkInline href={link2}>
+          GitHub Microservicio:{" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="w-5 icon icon-tabler icon-tabler-chevron-right"

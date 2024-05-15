@@ -1,20 +1,134 @@
 ---
 import ExperienceItem from "./ExperienceItem.astro"
+
+const descEstusolucion = `Como desarrollador especializado en .NET, ASP.NET, C#, Entity Framework y SQL Server, así como en tecnologías front-end como JavaScript, TypeScript, ReactJs, HTML5 y CSS3, tengo experiencia en la creación y mantenimiento de soluciones web robustas y eficientes. Mi labor incluye la revisión, edición, optimización y mejora del contenido web de los clientes asignados, asegurando su funcionalidad y rendimiento óptimo.
+
+Además, me encargo de la toma de requerimientos para la actualización o creación de nuevos módulos según las necesidades del cliente. Brindo soporte técnico tanto en el aspecto general como en el funcionamiento específico de la aplicación, garantizando una experiencia fluida para el usuario final.
+
+Asimismo, me responsabilizo de la actualización de versiones, trabajando con entornos como Windows Server y IIS para asegurar una implementación sin contratiempos y una transición sin interrupciones en el servicio.
+
+Mi enfoque se centra en proporcionar soluciones tecnológicas integrales y orientadas a resultados, manteniendo siempre la satisfacción del cliente como prioridad principal.`
+
+
+const descEstusolucionFree = `Se a desarrollado una aplicacion web utilizando c#, .Net, Asp.net, Entity Framework 4.7.2, JavaScript, HTML3, CSS, Bootstrap y Sql Server, enfocada en la administracion de conductores y vehiculos.`
+
+
+const descKonectBTO = `Se ha desarrollado una aplicación web utilizando Java, Maven, Thymeleaf, Bootstrap, Spring Boot, JPA, Hibernate, H2, que incluye mockups con tablas de empleados y solicitudes, permitiendo la inserción, eliminación, edición y consulta de información.`
+
+const descMuraby = `Toma de requerimientos, parametrización, capacitación y soporte de la aplicación web y móvil.
+
+Nuestro enfoque se centra en llevar a cabo todos los procesos operativos del cliente y configurarlos de la manera más proactiva y automatizada posible. Esto permite que puedan ser registrados desde la aplicación sin necesidad de formularios en físico. Una vez completado el registro, los datos pasan a una sección de flujos que permite validar la información por parte del técnico en campo y, posteriormente, ser aprobada.
+
+Al finalizar el proceso, el usuario podrá encontrar los tiempos y el formato general (Excel) con todos los datos registrados en la aplicación, listos para generar un reporte o para su entrega.`
+
+const descMonogram = `Vallidaciones de negodo utilizando metodologias agiles y Scrum centrandola en la entrega del producto, menjando ciclos de tiempo sprint & Kanban para la organizacion de tareas. Creacion del MockUp con Adobe XD y Photoshop, Tecnologias: JavaScript, TypeScript y Angular para (MVP).`
+
+const descRom = `Funciones: creacion y mantenimiento correctivo de features de la API.
+Tecnologia: Java vertx, ReactJs basico.`
+
+const descEclatApp = `Durante mi primera experiencia laboral en desarrollo móvil, tuve la oportunidad de participar en emocionantes proyectos donde pude aplicar mis habilidades en diseño CSS y maquetado utilizando React Native.
+
+Mi rol consistió en traducir diseños de interfaz de usuario en especificaciones visuales con CSS y llevar a cabo el maquetado correspondiente en React Native, permitiendo así la creación de aplicaciones móviles dinámicas y estéticamente atractivas. `
+
 const EXPERIENCIE = [
   {
     date: "Actualmente...",
-    title: "Freelance Dev NextJs, ReactJS y TypeScript",
-    company: "Keluc",
+    time: "3 meses",
+    title: "Freelance Dev Full Stack JR.",
+    company: "Swaiifu",
     description:
-      "Soy responsable de la creación y desarrollo de una plataforma que ofrece servicios personalizados centrados en la remodelación de interiores y el diseño e instalación de cocinas integrales. Desde el diseño conceptual hasta la implementación, lideré el proceso para garantizar una experiencia de usuario excepcional y resultados de alta calidad en cada proyecto.",
+      "Aplicacion web y Movil desarrollada en NestJs, Python, Docker, Azure, Firebase, Postgrest, Flutter, Github para la generacion de imagenes con IA.",
   },
   {
     date: "Marzo 2024",
-    title: "Desarrollador Web FullStack",
+    time: "1 day",
+    title: "Dev Full Stack JR.",
+    company: "Swaiifu",
+    description:
+      "Construccion de un BFF (Backend For Frontend) con NestJs y un Microservicio en Python, la idea era consumir la IA de Hugging face 'cardiffnlp/twitter-roberta-base-sentiment-latest' desde el microservicio y realizar la peticiones HTTP desde el BFF.",
+    link: "https://github.com/alxxr/bff",
+  },
+  {
+    date: "Marzo 2024",
+    time: "1 año 2 meses",
+    title: "Desarrollador Web FullStack JR.",
     company: "C&M DEVELOPMENT GROUP S.A.S",
     description:
       "Encargado de liderar el desarrollo completo de proyectos, abarcando desde la creación de bases de datos hasta la implementación del FrontEnd y BackEnd. Me especializo en tecnologías como .NET C#, Angular, TypeScript y SQL Server, asegurando la integración fluida de sistemas y la entrega de soluciones eficientes y de alta calidad.",
-    link: "https://porfolioalex.netlify.app/public/Documents/cv.pdf",
+    link: "https://www.camdg.net/",
+  },
+  {
+    date: "Octubre 2023",
+    time: "1 mes",
+    title: "Desarrollador Web FullStack JR.",
+    company: "PANDAPE | REDARBOR",
+    description:
+      "Aplicacion Web para crear candidatos y sus experiend,as profesionales ieon toda.s llas acciones de Create, Edite, Delete, View.",
+    link: "https://github.com/alxxr/Candidatos",
+  },
+  {
+    date: "Enero 2023",
+    time: "1 mes",
+    title: "Freelance",
+    company: "KonectaBTO (Banco BBVA)",
+    description: descKonectBTO,
+    link: "https://github.com/KonectaBTO/AdministracionPersonal",
+  },
+  {
+    date: "Diciembre 2022",
+    time: "1 año",
+    title: "Desarrollador Web FullStack JR.",
+    company: "ESTUSOLUCION.COM S.A.S",
+    description: descEstusolucion,
+    link: "https://estusolucion.com/",
+  },
+  {
+    date: "Diciembre 2021",
+    time: "1 mes",
+    title: "Freelance Dev",
+    company: "ESTUSOLUCION.COM S.A.S",
+    description: descEstusolucionFree,
+    link: "https://github.com/alxxr/Transporte-y-logistica-freelancerasp.net",
+  },
+  {
+    date: "Diciembre 2021",
+    time: "6 meses",
+    title: "Support Analyst (Practicas)",
+    company: "ProductividApp | Muraby",
+    description: descMuraby,
+    link: "https://muraby.io/",
+  },
+  {
+    date: "Mayo 2021",
+    time: "2 meses",
+    title: "Monogram",
+    company: "Aux FrontEnd",
+    description: descMonogram,
+    link: "",
+  },
+  {
+    date: "Febrero 2021",
+    time: "3 meses",
+    title: "rom.U",
+    company: "Aux BackEnd",
+    description: descRom,
+    link: "",
+  },
+  {
+    date: "Abril 2020",
+    time: "2 mes",
+    title: "EclatApp",
+    company: "Movile JR",
+    description: descEclatApp,
+    link: "",
+  },
+  {
+    date: "Proyecto Personal",
+    time: "",
+    title: "Freelance Dev.",
+    company: "Keluc",
+    description:
+      "Soy responsable de la creación y desarrollo de una plataforma que ofrece servicios personalizados centrados en la remodelación de interiores y el diseño e instalación de cocinas integrales. Desde el diseño conceptual hasta la implementación. lideré el proceso para garantizar una experiencia de usuario excepcional y resultados de alta calidad en cada proyecto.",
   },
 ]
 ---

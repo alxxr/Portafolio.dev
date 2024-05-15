@@ -1,5 +1,13 @@
 {
-	"_variables": {
-		"lastUpdateCheck": 1714227708417
-	}
+  "_variables": {
+    "lastUpdateCheck": 1715567389737
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "[typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

@@ -1,38 +1,65 @@
 ---
- const personalImageAlt = "Alexander Rosas"
+import Whatsapp from "./icons/Whatsapp.astro";
+
+const personalImageAlt = "Alexander Rosas";
 ---
 
-<article class="flex flex-col items-center justify-center gap-8 text-gray-700 dark:text-gray-300 md:flex-row">
+
+<style>
+  .sizeButtonW {
+    width: 5rem;
+  height: 5rem
+  }
+</style>
+
+<article
+  class="flex flex-col items-center justify-center gap-8 text-gray-700 dark:text-gray-300 md:flex-row relative"
+>
   <div
     class="[&>p]:mb-4 [&>p>strong]:text-yellow-500 dark:[&>p>strong]:text-yellow-100 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1"
   >
     <p>
       Me llamo Alexander Rosas pero mis amigos me llaman Alex. Empecé en la
-      programación con un archivo de texto y mis primeras linea de HTML, tenia 13 años.
-      Actualmente estoy <strong>como Desarrollador Web</strong>.
+      programación con un archivo de texto y mis primeras linea de HTML, tenia
+      13 años. Actualmente estoy <strong>como Desarrollador Web</strong>.
     </p>
 
     <p>
-      Algunos de mis éxitos incluyen 
+      Algunos de mis éxitos incluyen
       <strong>
         la creación de mi primera Aplicacion Web (Crud), sin conocimiento alguno
         logre desempeñar el rol y crear desde la BD, BackEnd y FrontEnd
-      </strong>.
-      Aunque hoy la version del proyecto sea antigua, fue un gran avance para iniciar 
-      mi carrera profesional.
+      </strong>. Aunque hoy la version del proyecto sea antigua, fue un gran
+      avance para iniciar mi carrera profesional.
     </p>
 
     <p>
       Como desarrollador de software,
       <strong>
-        cuento con grandes habilidades para desempeñar los retos y obstaculos  que se presenten,
-        <em class="italic">mi compromiso y vision de exito siempre me a permitido romper estereotipos y barreras</em>
-      </strong>.
-      Mi objetivo es aprender de las personas que me rodean y a la vez compartir mi conocimiento
-      para mejorar la experiencia del usuario.
+        cuento con grandes habilidades para desempeñar los retos y obstaculos
+        que se presenten,
+        <em class="italic"
+          >mi compromiso y vision de exito siempre me a permitido romper
+          estereotipos y barreras</em
+        >
+      </strong>. Mi objetivo es aprender de las personas que me rodean y a la
+      vez compartir mi conocimiento para mejorar la experiencia del usuario.
     </p>
   </div>
 
-  <img width="200" height="200" src="/me.png" alt={personalImageAlt} class="order-1 object-cover w-64 h-full p-1 md:order-2 rotate-3 lg:p-2 lg:w-64 aspect-square rounded-2xl bg-black/20 dark:bg-yellow-500/5 ring-1 ring-black/70 dark:ring-white/20 " style="object-position: 50% 50%">
+  <a
+    href="https://wa.me/3058130637"
+    class="py-2 px-4 rounded-full inline-flex items-center fixed bottom-4 right-4"
+  >
+    <Whatsapp class="sizeButtonW"/>
+  </a>
 
+  <img
+    width="200"
+    height="200"
+    src="/me.png"
+    alt={personalImageAlt}
+    class="order-1 object-cover w-64 h-full p-1 md:order-2 rotate-3 lg:p-2 lg:w-64 aspect-square rounded-2xl bg-black/20 dark:bg-yellow-500/5 ring-1 ring-black/70 dark:ring-white/20"
+    style="object-position: 50% 50%"
+  />
 </article>

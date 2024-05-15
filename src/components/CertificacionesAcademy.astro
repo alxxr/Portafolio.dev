@@ -1,0 +1,109 @@
+---
+const PROJECTS = [
+  {
+    image: "/public/certificacionesAcademicas/devf.png",
+  },
+  {
+    image: "/public/certificacionesAcademicas/grancolombia.png",
+  },
+  {
+    image: "/public/certificacionesAcademicas/mintic1.png",
+  },
+  {
+    image: "/public/certificacionesAcademicas/mintic2.png",
+  },
+  {
+    image: "/public/certificacionesAcademicas/mintic3.png",
+  },
+  {
+    image: "/public/certificacionesAcademicas/mintic4.png",
+  },
+  {
+    image: "/public/certificacionesAcademicas/mintic5.png",
+  },
+  {
+    image: "/public/certificacionesAcademicas/Platzi1.png",
+  },
+  {
+    image: "/public/certificacionesAcademicas/platzi2.png",
+  },
+  {
+    image: "/public/certificacionesAcademicas/platzi3.png",
+  },
+  {
+    image: "/public/certificacionesAcademicas/platzi4.png",
+  },
+  {
+    image: "/public/certificacionesAcademicas/platzi5.png",
+  },
+];
+---
+
+<div class="md:px-14 px-4 py-16">
+  <style>
+    .logos {
+      /* overflow: hidden; */
+      white-space: nowrap;
+    }
+
+    /* .logos-slide {
+      display: flex;
+      animation: slide 5s infinite linear;
+    } */
+
+    @keyframes slide {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    /* .logos:hover .logos-slide {
+      animation-play-state: paused;
+    } */
+
+    .logos-slide {
+      gap: 150px;
+      display: inline-flex;
+      animation: 5s slide infinite linear;
+    }
+
+    .logos-slide img {
+      height: 20rem;
+      margin: 0 40px;
+    }
+  </style>
+
+  <div class="my-12 flex flex-col justify-between items-center">
+    <div class="text-center my-8">
+      <div class="logos">
+        <div class="logos-slide ">
+          {
+            PROJECTS.map(({ image }, index) => (
+              <img
+                alt="Tecnología"
+                class="object-cover object-top transition duration-500"
+                loading="lazy"
+                src={image}
+              />
+            ))
+          }
+        </div>
+        <!-- <div class="logos-slide">
+          {
+            PROJECTS.map(({ image }, index) => (
+              <img
+                alt="Tecnología"
+                class="object-cover object-top transition duration-500"
+                loading="lazy"
+                src={image}
+              />
+            ))
+          }
+        </div> -->
+      </div>
+    </div>
+  </div>
+</div>

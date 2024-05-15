@@ -1,0 +1,86 @@
+---
+import GitHub from "./icons/GitHub.astro";
+import NextJS from "./icons/NextJS.astro";
+import Tailwind from "./icons/Tailwind.astro";
+import Link from "./icons/Link.astro";
+import LinkButton from "./LinkButton.astro";
+
+const TECNOLOGIES = [
+  {
+    image: "/public/tecnologias/Angular.png",
+  },
+  {
+    image: "/public/tecnologias/Astro.png",
+  },
+  {
+    image: "/public/tecnologias/React.png",
+  },
+  {
+    image: "/public/tecnologias/azure.png",
+  },
+  {
+    image: "/public/tecnologias/Bootstrap.png",
+  },
+  {
+    image: "/public/tecnologias/cshar.png",
+  },
+  {
+    image: "/public/tecnologias/CSS3.png",
+  },
+];
+---
+
+<div class="flex flex-col gap-y-16">
+  <style>
+    .logos-container {
+      overflow: hidden;
+    }
+
+    .logos-slide {
+      display: flex;
+      animation: slide 35s infinite linear;
+    }
+
+    @keyframes slide {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    .logos-slide img {
+      height: 70px; /* Ajusta el tamaño según tus necesidades */
+      margin-right: 40px; /* Ajusta el espaciado entre imágenes */
+    }
+  </style>
+
+  <div class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
+    <div class="w-full logos-container">
+      <div class="logos-slide">
+        {
+          TECNOLOGIES.map(({ image }, index) => (
+            <img
+              alt="Tecnología"
+              class="object-cover object-top transition duration-500"
+              loading="lazy"
+              src={image}
+            />
+          ))
+        }
+        {
+          TECNOLOGIES.map(({ image }, index) => (
+            <img
+              alt="Tecnología"
+              class="object-cover object-top transition duration-500"
+              loading="lazy"
+              src={image}
+            />
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</div>
+
