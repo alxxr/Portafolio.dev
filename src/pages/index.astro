@@ -20,76 +20,68 @@ import Hero from "@/components/Hero.astro";
   title="Porfolio de Alexander - Desarrollador y Programador Web con 2 años de experiencia"
   description="Contrata a Alexander para crear tu aplicación web. Desarrollador Web y Creador de Experiencias. Especializado en crear aplicaciones únicas."
 >
-  <main class="px-4">
-    <SectionContainer class="py-16 md:py-36">
-      <Hero />
-    </SectionContainer>
-  </main>
-  <div class="space-y-24">
-    <SectionContainer id="experiencia">
-      <h2
-        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
-      >
-        <Briefcase class="size-8" />
-        Experiencia laboral
-      </h2>
-      <Experience />
-    </SectionContainer>
+  {/* Contenedor principal, usando flex para organización y ocupando toda la altura de la pantalla */}
 
-    <SectionContainer id="tecnologias">
-      <h2
-        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
-      >
-        <TecnologieIco class="size-7" />
-        Tecnologias
-      </h2>
-      <Tecnologies />
-    </SectionContainer>
+    <main class="px-4 w-full flex flex-col "> {/* flex-1 para tomar todo el espacio disponible */}
+      <SectionContainer class="py-16 md:py-36">
+        <Hero />
+      </SectionContainer>
+    </main>
+    {/* Contenedor para secciones adicionales, con overflow para permitir scroll */}
+    <div class="space-y-24 overflow-y-auto">
+      <SectionContainer id="experiencia">
+        <h2 class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white">
+          <Briefcase class="size-8" />
+          Experiencia laboral
+        </h2>
+        <Experience />
+      </SectionContainer>
 
-    <SectionContainer id="proyectos">
-      <h2
-        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
-      >
-        <CodeIcon class="size-7" />
-        Proyectos
-      </h2>
-      <Projects />
-    </SectionContainer>
+      <SectionContainer id="tecnologias">
+        <h2 class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white">
+          <TecnologieIco class="size-7" />
+          Tecnologias
+        </h2>
+        <Tecnologies />
+      </SectionContainer>
 
-    <SectionContainer id="sobre-mi">
-      <h2
-        class="flex items-center mb-6 text-3xl font-semibold gap-x-8 text-black/80 dark:text-white"
-      >
-        <ProfileCheck class="size-8" />
-        Sobre mí
-      </h2>
-      <AboutMe />
-    </SectionContainer>
+      <SectionContainer id="proyectos">
+        <h2 class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white">
+          <CodeIcon class="size-7" />
+          Proyectos
+        </h2>
+        <Projects />
+      </SectionContainer>
 
-    <SectionContainer>
-      <h2
-        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
-      >
-        <CodeIcon class="size-7" />
-        Certificaciones Laborales
-      </h2>
-    </SectionContainer>
+      <SectionContainer id="sobre-mi">
+        <h2 class="flex items-center mb-6 text-3xl font-semibold gap-x-8 text-black/80 dark:text-white">
+          <ProfileCheck class="size-8" />
+          Sobre mí
+        </h2>
+        <AboutMe />
+      </SectionContainer>
 
-    <SectionContainerCert id="certLaboral">
-      <CertLaborales />
-    </SectionContainerCert>
+      <SectionContainer>
+        <h2 class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white">
+          <CodeIcon class="size-7" />
+          Certificaciones Laborales
+        </h2>
+      </SectionContainer>
 
-    <SectionContainer id="certAcademy">
-      <h2
-        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
-      >
-        <CodeIcon class="size-7" />
-        Certificaciones Academicas
-      </h2>
-    </SectionContainer>
+      <SectionContainerCert id="certLaboral">
+        <CertLaborales />
+      </SectionContainerCert>
 
-    <SectionContainerCert id="certAcademy">
-      <CertAcademy />
-    </SectionContainerCert>
-  </div>
+      <SectionContainer id="certAcademy">
+        <h2 class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white">
+          <CodeIcon class="size-7" />
+          Certificaciones Academicas
+        </h2>
+      </SectionContainer>
+
+      <SectionContainerCert id="certAcademy">
+        <CertAcademy />
+      </SectionContainerCert>
+    </div>
 </Layout>
+
